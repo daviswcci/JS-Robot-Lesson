@@ -3,7 +3,7 @@ var dragging, draggedOver;
 
 const forBlock = `
 <p> Loop: <select class="forOption">
-            <option value="1">Move</option>
+            <option value="1">Move forward</option>
             <option value="2">Rotate CW</option>
             <option value="3">Rotate CCW</option>
             <option value="4">Stop</option>
