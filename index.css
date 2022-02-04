@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: seashell;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(16, 2.5vw);
+    grid-template-rows: repeat(10, 2.5vw);
+    justify-content: center;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+    width: 30%;
+}
+
+.flex-center {
+    flex-grow: 1;
+}
+
+.flex-item + .flex-item { 
+    margin-left: 2%; 
+  }
+
+.space {
+    width: 90%;
+    height: 90%;
+    font-family: sans-serif;
+    font-size: 7pt;
+    text-align: center;
+    padding: 0;
+    font-weight: bold;
+}
+
+#instructions p{
+    border-radius: 5px;
+    background-color: burlywood;
+    margin: 1%;
+    padding: 2%;
+}
+
+/*Example modal taken from W3 schools*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+.modal-content {
+    background-color: cornsilk;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 60%;
+    overflow: auto;
+  }
+
+h1 {
+    justify-content: center;
+    text-align: center;
+}
+
+h3 {
+    justify-content: center;
+    text-align: center;
+}
+
+.forCode {
+    background-color: palegreen;
+}
+
+.moveCode {
+    background-color: palegoldenrod;
+}
+
+.stopCode {
+    background-color: palevioletred;
+}
+
+.rotCode {
+    background-color: paleturquoise;
+}
+
+#tools, #gameButtons {
+    background-color: burlywood;
+    text-align: center;
+    vertical-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 5px;
+}
+
+#tools button, #gameButtons button {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#editor {
+    background-color: cornsilk;
+}
+
+#code {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    align-items: baseline;
+}
+
+.codeBlock {
+    
+    position: relative;
+    border-radius: 5px;
+    font-size: small;
+    padding-left: 5%;
+    vertical-align: baseline;
+    padding-left: 0;
+    padding: 2%;
+    margin: 2%;
+    padding-right: 5%;
+}
+
+.codeBlock p {
+    pointer-events: none;
+    margin: 0%;
+    margin-left: 0%
+}
+
+.codeBlock input {
+    pointer-events: visibleFill;
+    border-radius: 5px;
+    border-style: none;
+    box-sizing: border-box;
+    height: 1.5em;
+    width: 3em;
+    margin: 1px;
+    font-size: smaller;
+}
+.codeBlock select {
+    pointer-events: visibleFill;
+    border-radius: 5px;
+    border-style: none;
+    height: 1.5em;
+    font-size: smaller;
+}
+
+button {
+    border-radius: 5px;
+    border-style: none;
+    border-width: 0px;
+}
+
+button {
+    border-radius: 5px;
+    border-style: none;
+    border-width: 0px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.deleteBtn {
+	overflow: hidden;
+	position: absolute;
+    top: 0px;
+    right: 0px;
+	border: none;
+	padding: 0;
+	width: 1em; height: 1em;
+	border-radius: 50%;
+	background: transparent;
+	color: #4e4e4e;
+	font: inherit;
+	text-indent: 100%;
+	cursor: pointer;
+    opacity: 50%;
+}
+
+.deleteBtn:focus {
+    outline: solid 0 transparent;
+    box-shadow: #4e4e4e;
+}
+
+.deleteBtn:hover {
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.deleteBtn:before, .deleteBtn:after {
+    position: absolute;
+    top: 15%; left: calc(50% - .0625em);
+    width: .125em; height: 70%;
+    border-radius: .125em;
+    transform: rotate(45deg);
+    background: currentcolor;
+    content: ''
+}
+
+.deleteBtn:after { 
+    transform: rotate(-45deg); 
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <h1>WCCI Admissions Assessment: Maze Robot</h1>
+    <div id="play area">
+        <div id="loseModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p>The robot couldn't find its way...</p>
+                <button id="submit" onclick="closeModal()">Try Again</button>
+            </div>
+        </div>
+
+        <div id="winModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p>The robot made it out!</p>
+                <p id="score">Moves: </p>
+                <button id="submit" onclick="closeModal()">Try Again</button>
+                <button onclick="printInstructions()">Print Instructions</button>
+            </div>
+        </div>
+
+        <div id="instructionsModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p>Copy your solution into the logic assessment text box!</p>
+                <ol id="instructionsList">
+                </ol>
+                <button id="submit" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+        <div id="flex">
+            <div id="instructions"  class="flex-item">
+                <h3>
+                    Instructions
+                </h3>
+                <p>
+                    You've been placed in charge of navigating a robot through a maze. Your goal is to move the robot from to the red <b>End</b> space in the fewest moves possible. In order to do that, pass over a <b>Key</b> space to remove the <b>Lock</b> and open the path to the end. <br> <br> The robot, being a bit primitive, can only do a few things: stop, move forward, and rotate either clockwise or counterclockwise. And since the robot has tunnel vision, it can only perform one of these actions at a time. <br> <br> Using these features and your understanding of loops, write a sequence of steps that will guide your robot over a key and to the end. Dragging a block will place it behind the block you drop it onto.
+                </p>
+            </div>
+            <div class="flex-center">
+                <h3>Maze</h3>
+                <div id="grid" class="flex-center"></div>
+            </div>
+            <div  class="flex-item">
+                <h3>Editor</h3>
+                <div id="editor">
+                    <div id="tools">
+                        <button onclick="addFor()">Add Loop</button>
+                        <button onclick="addRot()">Add Rotate</button>
+                        <button onclick="addMove()">Add Forward</button>
+                        <button onclick="addStop()">Add Stop</button>
+                    </div>
+                    <ol id="code">
+
+                    </ol>
+                    <div id="gameButtons">
+                        <button onclick="runProgram()">Run Program</button>
+                        <button onclick="runProgramAnimated()">Play Animation</button>
+                        <button onclick="printInstructions()">Print Instructions</button>
+                        <button onclick="resetGame()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+    <script src="editor.js"></script>
+    <link rel="stylesheet" href="index.css">
+</body>
+
+</html>
