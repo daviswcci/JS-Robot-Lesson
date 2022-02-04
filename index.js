@@ -294,7 +294,7 @@ function printInstructions(){
         list.appendChild(li);
     });
     let moves = document.createElement("p");
-    moves.innerText = "Moves: " + instructions.length;
+    moves.innerText = "Instruction Count: " + instructions.length;
     runProgram();
     list.append(moves);
     let completedText = document.createElement("p");
