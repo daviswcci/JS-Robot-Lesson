@@ -37,7 +37,7 @@
                     Instructions
                 </h3>
                 <p>
-                    You've been placed in charge of navigating a robot through a maze. Your goal is to move the robot from to the red <b>End</b> space in the fewest moves possible. In order to do that, pass over a <b>Key</b> space to remove the <b>Lock</b> and open the path to the end. <br> <br> The robot, being a bit primitive, can only do a few things: stop, move forward, and rotate either clockwise or counterclockwise. And since the robot has tunnel vision, it can only perform one of these actions at a time. <br> <br> Using these features and your understanding of loops, write a sequence of steps that will guide your robot over a key and to the end. Dragging a block will place it behind the block you drop it onto.
+                    You've been placed in charge of navigating a robot through a maze. Your goal is to move the robot from to the red <b>End</b> space in the fewest moves possible. In order to do that, pass over a <b>Key</b> space to remove the <b>Lock</b> and open the path to the end. <br> <br> The robot, being a bit primitive, can only do a few things: stop, move forward, and rotate either clockwise or counterclockwise. And since the robot has tunnel vision, it can only perform one of these actions at a time. <br> <br> Using these features and your understanding of loops, write a sequence of steps that will guide your robot over a key and to the end. 
                 </p>
             </div>
             <div class="flex-center">
@@ -47,6 +47,9 @@
             <div  class="flex-item">
                 <h3>Editor</h3>
                 <div id="editor">
+                    <p>
+                        Pressing the buttons below will add an instruction block for the robot to follow. If instructions are out of order, dragging a block will place it behind the block you drop it onto.
+                    </p>
                     <div id="tools">
                         <button onclick="addFor()">Add Loop</button>
                         <button onclick="addRot()">Add Rotate</button>
